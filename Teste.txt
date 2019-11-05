@@ -1,1 +1,37 @@
+double salario, aumento;
 
+            for (int i = 0; i < 4; i++)
+            {
+
+                Console.WriteLine(" Digite o valor do salário dos funcionários: ");
+
+
+
+                {
+                    salario = double.Parse(Console.ReadLine());
+
+                    if (salario <= 300)
+                    {
+
+                        aumento = (salario * 50 / 100.0) + salario;
+
+                        Console.WriteLine("O aumento será de: " + aumento);
+
+                    }
+
+                    else if (salario > 300 & salario <= 600)
+                    {
+
+                        aumento = (salario * 30 / 100.0) + salario;
+                        Console.WriteLine("O novo salario será: " + aumento);
+                    }
+                    else if (salario > 600)
+                    {
+
+                        aumento = (salario * 80 / 100.0) + salario;
+                        Console.WriteLine("O novo salario será: " + aumento);
+                    }
+
+                }
+            }
+            Console.ReadLine();
